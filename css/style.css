@@ -1,0 +1,38 @@
+body{
+  background-color: #000;
+  color: #fff;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  padding: 0 50px 0 50px;
+  background-color: rgb(107, 24, 24);
+}
+
+header a{
+  color: #fff;
+}
+
+.logo{
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.imgLogo{
+  width: 100px;
+}
+
+.links{
+  display: flex;
+  justify-content: space-around;
+}
+
+.projetos{
+  padding: 0 30px;
+}
