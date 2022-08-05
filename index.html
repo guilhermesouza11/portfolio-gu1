@@ -13,16 +13,60 @@
 <body>
   <!-- <h1>Primeira tag de todas</h1> -->
   <header>
-    <div class="logo">
-      <a href="">
-        <img class="imgLogo" src="img/sprite-drink-logo.png" alt="Logo japones da Sprite">
-      </a>
-    </div>
-    <div class="links">
-      <a href="#1">Experiencias</a>
-      <a href="#2" class="projetos">Projetos</a>
-      <a href="#3">Sobre mim</a>
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href="">
+          <img class="imgLogo" src="img/sprite-drink-logo.png" alt="Logo japones da Sprite">
+        </a>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item">
+            <a href="#1" class="nav-link">Experiencias</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2" class="nav-link">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#3" class="nav-link">Sobre mim</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Criando menu responsivo -->
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()">
+          <img class="icon" src="img/maximize.svg" alt="menu">
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item">
+            <a href="#1" class="nav-link">Experiencias</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2" class="nav-link">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#3" class="nav-link">Sobre mim</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
+  <!-- <main>
+    <div class="eu">
+      <img src="img/gui1-perfil.png" alt="">
+      <div class="textoApresentacao">
+        <h1 class="title">Olá, eu sou o Guilherme!</h1>
+        <p class="text">
+          Sejam muito bem vindos ao espaço onde posso me </br>
+          apresentar um pouco e mostrar sobre o que sei.
+        </p>
+      </div>
+    </div>
+  </main> -->
 </body>
+<script src="js/app.js"></script>
 </html>
