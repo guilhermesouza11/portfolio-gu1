@@ -15,7 +15,6 @@ body{
 
 header{
   /* background-color: rgb(67, 143, 118); */
-  padding: 0 10%;
 }
 
 .nav-bar{
@@ -70,6 +69,13 @@ header{
     display: none;
   }
 
+  .nav-list{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+  }
+
   .mobile-menu-icon{
     display: block;
   }
@@ -96,45 +102,53 @@ header{
   }
 }
 
+/* MAAAAAAAAAAAAAAAAAAAAAAAAINNNNNNNNNNNNNNNNNN */
 
-
-
-
-main{
-  padding: 100px 0;
-  display: flex;
-  justify-content: center;
-}
-
-.eu{
+.container{
+  /* padding: 100px 0; */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 50vw;
+  text-align: center;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
 }
 
-.eu img{
+.foto-perfil img{
   width: 300px;
   border-radius: 50%;
 }
 
 .title{
+  text-align: center;
   display: flex;
   width: auto;
-  font-weight: 400;
 }
 
 .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 400px;
+}
+
+.text h1{
+  font-weight: 600;
+}
+
+.text p{
   font-weight: 100;
 }
 
-
 @media screen and (max-width: 390px){
-  .links{
-    display: none;
+  .container{
+    margin: 0 50px;
   }
 
-  .textoApresentacao{
-    display: none;
+  .text{
+    margin: 50px 0;
   }
 }
